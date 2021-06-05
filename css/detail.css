@@ -1,0 +1,282 @@
+.detail_index{
+    position: absolute;
+    width: 1920px;
+    height: 270px;
+    background: #f1f1f1;
+    z-index: -5;
+}
+.detail_head{
+    position: relative;
+    top: 135px;
+    width: 1900px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 2;
+    letter-spacing:15px;
+}
+.home{
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-color: rebeccapurple;
+}
+.gohome{
+    position: relative;
+    left: 870px;
+    top: 140px;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing:1px;
+}
+.detail_shop{
+    position: relative;
+    left: 300px;
+    top: 330px;
+    width: 1320px;
+    height: 700px;
+    
+}
+.detail_pics{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.detail_pics img{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    transition: all 0.6s;
+    -ms-transition: all 0.8s;
+}
+.detail_pics img:hover{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.headline{
+    position: absolute;
+    left: 550px;
+}
+.headline h1{
+    font-size: 34px;
+    font-family: "华文楷体";
+    font-weight: bold;
+    color: #cc0000;
+}
+.headline_discount{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "黑体";
+}
+.headline_discount p{
+    font-size: 24px;
+    text-decoration: line-through;
+    color: #DDDDDD;
+    font-family: "黑体";
+}
+.headline_timecounter{
+    top: 90px;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+}
+.timecounter{
+    display: flex;
+    position: absolute;
+    top: 35px;
+    left: -10px;
+}
+.counter{
+    margin: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 7px;
+    background-color: #cc0000;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+}
+.counter1{
+    margin: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 7px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #cc0000;
+}
+.headline_stock{
+    position: absolute;
+    font-size: 20px;
+    top: 210px;
+}
+.headline_introduce{
+    width: 600px;
+    height: 90px;
+    position: absolute;
+    top: 260px;
+    font-size: 16px;
+    font-family: "仿宋";
+    line-height: 125%;
+}
+.quality{
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    top: 360px;
+}
+.input-number{
+    width: 80px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+.input-number,.input-number-decrement,.input-number-increment{
+    border: 1px solid #cccccc;
+    height: 40px;
+    user-select: none;
+}
+.input-number-decrement,.input-number-increment{
+    display: inline-block;
+    width: 30px;
+    line-height: 38px;
+    background: #f1f1f1;
+    color: #444444;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.input-number-decrement:active,.input-number-increment:active{
+    background: #dddddd;
+}
+.headline_addtocard{
+    line-height: 40px;
+    text-align: center;
+    top: 360px;
+    left: 200px;
+    position: absolute;
+    width: 120px;
+    height: 41x;
+    background-color: #cc0000;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.headline_addtocard:hover{
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: #000;
+}
+.headline_select{
+    position: absolute;
+    width: 320px;
+    height: 30px;
+    top: 430px;
+    font-size: 20px;
+    border: 1px solid #cccccc;
+}
+#roll {
+	height: 100px;
+	width: 100px;
+	position: fixed; /*fixed实现绝对定位*/
+	cursor:pointer;
+    z-index: 99;
+}
+#roll img{
+	height: 100px;
+	width: 100px;
+	z-index: 99;
+}
+.comment{
+    position: relative;
+    top: 530px;
+    width: 1320px;
+    height: 500px;
+}
+.comment_icon{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #cc0000;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+.comment_major{
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #cc0000;
+    top: 60px;
+}
+#value{
+    width: 300px;
+    height: 30px;
+}
+#pass_value{
+    width: 300px;
+    height: 30px;
+}
+#passpass_value{
+    width: 300px;
+    height: 30px;
+}
+#email{
+    width: 300px;
+    height: 30px;
+}
+#phone{
+    width: 300px;
+    height: 30px;
+}
+input::-ms-input-placeholder{text-align: center;}
+input::-webkit-input-placeholder{text-align: center;}
+.textc{
+    position: absolute;
+    top: 0;
+    left: 560px;
+}
+#textcc{
+    width: 700px;
+    height: 270px;
+}
+.submit{
+    left:500px;
+}
+.comment_submit{
+    position: relative;
+    top: 10px;
+    left: 400px;
+    width: 520px;
+    height: 50px;
+    background-color: #cc0000;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
