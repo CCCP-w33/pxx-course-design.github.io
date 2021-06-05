@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script type="text/javascript" src="js/countTime.js"></script>
+    <script type="text/javascript" src="js/quality.js"></script>
+</head>
+<body onload="countTime()">
+    <div class="top">
+        <div class="top-welcome">
+            <div class="welcome-content">
+                欢迎您访问拼夕夕！
+            </div>
+            <div class="welcome-settings">
+                <ul class="nav">
+                    <li class=""><a href="">语言: <img src="images/flags/cn.png"> 简体中文</a>
+                        <ul class="nav_language"> 
+                            <li>&nbsp; <img src="images/flags/cn.png"><a href="">   简体中文</a></li>
+                            <li>&nbsp; <img src="images/flags/en.png"><a href="">   English</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="">货币: <img src="images/flags/cn.png"> ¥CNY</a>
+                        <ul class="nav_currency">
+                            <li>&nbsp; <img src="images/flags/cn.png"><a href="">   人民币</a></li>
+                            <li>&nbsp; <img src="images/flags/en.png"><a href="">   美元</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="indeex">
+                <div class="logo"></div>
+                <div class="div_div">
+                    <ul class="nav_index">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="details.html">商店</a></li>
+                        <li><a href="details.html">商品详情</a></li>
+                    </ul>
+                </div>
+                <div class="shoppingcart">
+                    <a href=""><div class="search"></div></a>
+                    <a href=""><div class="account"></div></a>
+                    <a href=""><div class="like"> </div></a>
+                    <a href=""><div class="cart"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="top-index">
+    </div>
+    <div class="detail_index">
+        <div class="detail_head">
+            商品详情
+        </div>
+        <div class="gohome">
+            <a href=""><div class="home"></div></a>&nbsp;&nbsp;/  商品详情页
+        </div>
+    </div>
+    <div class="detail_shop">
+        <div class="detail_pics">
+            <img src="images/products/product-7.jpg">
+        </div>
+        <div class="headline">
+            <h1>恋恋情深——11支香槟玫瑰</h1>
+            <div class="headline_discount">¥79.00&nbsp;&nbsp;&nbsp;<p>¥99.00</p></div>
+            <div class="headline_timecounter">
+                <p>距离本次促销结束还有：</p>
+                <div class="timecounter">
+                <div class="counter"><span id="_d">00</span> </div>
+                <div class="counter1"><span id="_h">00</span> </div>
+                <div class="counter1"><span id="_m">00</span> </div>
+                <div class="counter1"><span id="_s">00</span> </div>
+                </div>
+            </div>
+            <div class="headline_stock">库存剩余：200枝</div>
+            <div class="headline_introduce">&emsp;&emsp;玫瑰花的花语为爱情、容光焕发、爱与美、勇敢。玫瑰不管在哪个国家地区，都是用来表达爱情的，适合恋人之间互相赠送，每年情人节都非常受欢迎。玫瑰的花色丰富，花色不同花语寓意也会有所不同。其中粉色玫瑰花语为暧昧、感动、初恋；白色玫瑰花语为纯洁、尊敬；黄色玫瑰花语为道歉；紫色玫瑰花语为梦幻、忧郁。</div>
+            <div class="quality">
+                <span onclick="minus()" class="input-number-decrement">-</span>
+                <input class="input-number" type="text" value="1" readonly="readonly" id="exampleInputAmount">
+                <span onclick="add()" class="input-number-increment">+</span>
+            </div>
+            <div class="headline_addtocard">添加到购物车</div>
+            <select class="headline_select">
+                <option value="0">请选择您的收货地址</option>
+                <option value="1">芜湖</option>
+                <option value="2">蚌埠</option>
+            </select>
+        </div>
+        <div class="comment">
+            <div class="comment_icon">您的评价(1)</div>
+            <div class="comment_major">
+                <form action="details.html" onsubmit="return checkForm()">
+                    <div>
+                        <div class="text">
+                            <p>用户名</p>
+                            <input id="value" onfocus="shoeTips('hint','用户名长度不能小于六')" onblur="hint_hide()" onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" />
+                            <span id="hint"></span>
+                        </div>
+                        <div class="text">
+                            <p>密码</p>
+                            <input id="pass_value" onfocus="shoeTips('pass_hint','密码长度不能小于六')" onblur="pass_hide()" onkeyup="checkPass()" type="password" name="password" placeholder="密码" />
+                            <span id="pass_hint"></span>
+                        </div>
+                        <div class="text">
+                            <p>确认密码</p>
+                            <input id="passpass_value" onfocus="shoeTips('passpass_hint','两次密码要一致')" onblur="passpass_hide()" onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码" />
+                            <span id="passpass_hint"></span>
+                        </div>
+                        <div class="text">
+                            <p>邮箱</p>
+                            <input id="email" onfocus="shoeTips('email_hint','邮箱格式要正确')" onblur="emailHide()" onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" />
+                            <span id="email_hint"></span>
+                        </div>
+                        <div class="text">
+                            <p>手机号</p>
+                            <input id="phone" type="text" onfocus="shoeTips('phone_hint','格式为十一位数字的手机号')" onblur="phoneHide()" onkeyup="phoneCheck()" Name="Phone" placeholder="手机号">
+                            <span id="phone_hint"></span>
+                        </div>
+                        <div class="textc">
+                            <p>您的评论</p>
+                            <input id='textcc' type="text">
+                        </div>
+                        <div class="comment_submit">提交</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="roll">
+        <img src="images/icon/coupon.png">
+    </div>
+    <script src="js/fly.js"></script>
+    <script src="js/aaa.js"></script>
+</body>
+</html>
